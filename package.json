@@ -1,0 +1,29 @@
+{
+  "name": "reservation-salles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HNTZ/reservation-salles.git"
+  },
+  "author": "gucci gang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HNTZ/reservation-salles/issues"
+  },
+  "homepage": "https://github.com/HNTZ/reservation-salles#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mongoose": "^5.4.22"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
