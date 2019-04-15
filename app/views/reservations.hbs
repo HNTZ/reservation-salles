@@ -1,0 +1,14 @@
+<h2>Mes reservations</h2>
+{{#if reservations}}
+    <ul>
+    {{#each reservations}}
+        <li>{{date}}, {{partOfDay}}, salle {{name}}</li>
+        <form method="POST" action="/reservations/{{room}}">
+            <input type="submit" value="Annuler">
+        </form>
+    {{/each}}
+    </ul>
+{{else}}
+    <p>Vous n'avez aucune reservations.</p>
+{{/if}}
+<a href="/">Retour accueil</a>

@@ -9,4 +9,4 @@ const roomSchema = mongoose.Schema({
     airConditioning: Boolean
 })
 
-module.exports = mongoose.model('Room', roomSchema)
+module.exports = mongoose.model('room', roomSchema)
