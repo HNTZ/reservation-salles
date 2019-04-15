@@ -1,0 +1,19 @@
+<ul>
+    {{#each rooms}}
+    <li>
+        {{name}}:
+        {{seats}} places,
+        {{computers}} ordinateurs
+        {{#if teacherComputer}}, ordinateur pour le prof{{/if}}
+        {{#if airConditioning}}, salle climatisee{{/if}}
+        <form action="/rooms/book" method='POST'>
+            <input type="hidden" name="room" value="{{_id}}">
+            <input type="hidden" name="name" value="{{name}}">
+            <input type="hidden" name="date" value="{{../date}}">
+            <input type="hidden" name="partOfDay" value="{{../partOfDay}}">
+            <button type="submit">Reserver</button>
+        </form>
+    </li>
+    {{/each}}
+</ul>
+<a href="/">Retour accueil</a>
