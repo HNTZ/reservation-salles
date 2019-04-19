@@ -1,0 +1,4 @@
+{"_id":{"$oid":"5caf7f8c0a58ba08d09d6f05"},"name":"B-105","seats":{"$numberInt":"6"},"computers":{"$numberInt":"7"},"teacherComputer":true,"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5caf7fa70a58ba08d09d6f06"},"name":"C-212","seats":{"$numberInt":"10"},"computers":{"$numberInt":"15"},"airConditioning":true,"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5cb9c28eac7d2b2490688d77"},"name":"A-005","seats":{"$numberInt":"20"},"computers":{"$numberInt":"20"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5cb9c313ac7d2b2490688d78"},"name":"A-101","seats":{"$numberInt":"30"},"computers":{"$numberInt":"0"},"teacherComputer":true,"__v":{"$numberInt":"0"}}
