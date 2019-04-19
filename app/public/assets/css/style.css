@@ -1,0 +1,66 @@
+body{
+    font-family: Verdana, Calibri, sans-serif;
+    margin: auto;
+    padding: 1%;
+    width: 80%;
+    text-align: center;
+}
+
+nav{
+    width: 100%;
+    background-color: cornflowerblue;
+}
+
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+
+nav > ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav > ul > li > a{
+    padding: 20px 30px;
+    color: white;
+}
+
+nav input[type=checkbox]{
+    display: none;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+
+
+.bouton {
+	width:85px;
+	height:85px;
+	background:#fafafa;
+	box-shadow:2px 2px 8px #aaa;
+	font:bold 13px Arial;
+	border-radius:50%;
+	color:#555;
+}
+
+#reservation{
+    margin : auto;
+}

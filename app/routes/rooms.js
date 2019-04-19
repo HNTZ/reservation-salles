@@ -59,7 +59,8 @@ router.get("/", (req, res) => {
         if (results) {
           res.render("rooms", { rooms: results, date : date, partOfDay })
         } else {
-          res.redirect("rooms", )
+          req.session.error = "Aucune salle correspondant a vos critère n'est disponible."
+          res.redirect("/")
         }
       }
     )
@@ -77,7 +78,8 @@ router.post("/book", (req, res) => {
   let resaSession = {
     ...resa._doc,
     date: moment(resa._doc.date).format('DD/MM/YYYY'),
-    name
+    name,
+    partOfDay: partOfDay == 'afternoon' ? 'après-midi' : 'matin'
   }
   if (!req.session.bookings) {
     req.session.bookings = [resaSession]

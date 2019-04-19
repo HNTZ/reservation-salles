@@ -1,0 +1,21 @@
+{{#if error}}
+    <div class="error">
+        <p>{{error}}</p>
+    </div>
+{{/if}}
+<form action="/rooms" style="display: flex; flex-direction: column; width: 300px;">
+    <label for="date">Date de reservation:</label>
+    <input type="date" name="date" id="date">
+    <span>Creneau horaire:</span>
+    <label for="morning">9h - 13h: <input type="radio" name="partOfDay" value="morning" id="morning"></label>
+    <label for="afternoon">14h - 18h: <input type="radio" name="partOfDay" value="afternoon" id="afternoon"></label>
+    <label for="seats">Nombre de places minimal:</label>
+    <input type="number" name="seats" id="seats">
+    <label for="computers">Nombre d'ordinateurs minimal:</label>
+    <input type="number" name="computers" id="computers">
+    <label for="teacherComputer">Ordinateur pour le professeur:</label>
+    <input type="checkbox" name="teacherComputer" id="teacherComputer">
+    <label for="airConditioning">Climatisation:</label>
+    <input type="checkbox" name="airConditioning" id="airConditioning">
+    <button type="submit">Rechercher</button>
+</form>

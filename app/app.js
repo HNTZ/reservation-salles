@@ -11,6 +11,9 @@ app.use(express.urlencoded({extended: true}))
 // Session
 app.use(session({secret: 'buu', saveUninitialized: false, resave: false}))
 
+// Static
+app.use(express.static(path.join(__dirname, '/public/assets')))
+
 // Routes
 const rootRoute = require('./routes/index')
 const roomsRoute = require('./routes/rooms')
