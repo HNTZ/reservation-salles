@@ -1,23 +1,9 @@
-<p>{{title}}</p>
-{{#if error}}
-    <div class="error">
-        <li>{{error}}</li>
-    </div>
-{{/if}}
-<form action="/rooms" style="display: flex; flex-direction: column; width: 300px;">
-    <label for="date">Date de reservation:</label>
-    <input type="date" name="date" id="date">
-    <span>Creneau horaire:</span>
-    <label for="morning">9h - 13h: <input type="radio" name="partOfDay" value="morning" id="morning"></label>
-    <label for="afternoon">14h - 18h: <input type="radio" name="partOfDay" value="afternoon" id="afternoon"></label>
-    <label for="seats">Nombre de places minimal:</label>
-    <input type="number" name="seats" id="seats">
-    <label for="computers">Nombre d'ordinateurs minimal:</label>
-    <input type="number" name="computers" id="computers">
-    <label for="teacherComputer">Ordinateur pour le professeur:</label>
-    <input type="checkbox" name="teacherComputer" id="teacherComputer">
-    <label for="airConditioning">Climatisation:</label>
-    <input type="checkbox" name="airConditioning" id="airConditioning">
-    <button type="submit">Rechercher</button>
-</form>
-<a href="/reservations">Mes reservations</a>
+<img id="image_presentation" alt="Présentation de RTS HTM" title="Présentation de RTS HTM" src="img/presentation.jpg">
+
+<p>
+	Cliquez ci-dessous pour réserver votre salle!<br />
+	Vous n'aurez qu'à entrer : la date de réservation, le créneau horaire, le nombre minimum de places et d'ordinateurs
+	(un pour le professeur ?), climatisée ?
+</p>
+
+<a href="reservation.html"><input id="bouton_reservation" class="bouton" type="button" value="Réserver"></a>

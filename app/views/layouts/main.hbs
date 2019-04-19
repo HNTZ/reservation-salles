@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Reservation de salles</title>
+    <title>RTS HTM</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-    {{{body}}}
+
+    <!-- ENTETE -->
+    <img id="logo" alt="Logo de RTS HTM" title="Logo de RTS HTM" src="/img/logo.png">
+
+    <!-- MENU -->
+    <nav>
+        <label for="menu-mobile" class="menu-mobile">Menu</label>
+        <input type="checkbox" id="menu-mobile" role="button">
+
+        <ul>
+            <li class="menu-accueil"><a href="/">Accueil</a></li>
+            <li class="menu-reservation"><a href="/search">Réservation</a></li>
+            <li class="menu-mes-salles"><a href="/reservations">Mes salles</a></li>
+            <li class="menu-contact"><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <br />
+
+    <div id="presentation">
+        {{{body}}}
+    </div>
+
+    <hr />
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <img id="logo_email" alt="E-mail" title="rts-htm@gmail.com" src="/img/email.png">
+        <img id="logo_telephone" alt="Telephone" title="01.01.01.01.01" src="/img/telephone.png">
+        <img id="logo_courrier" alt="Adresse postale" title="4 Place Jussieu, 75005 Paris" src="/img/courrier.png">
+        <a
+            href="https://www.google.com/maps/place/Sorbonne+Universit%C3%A9+Campus+Pierre+et+Marie+Curie/@48.8471036,2.3553103,17z/data=!3m1!4b1!4m5!3m4!1s0x47e671fa8dc1c30b:0xf0b82c4672cb0c0!8m2!3d48.8471036!4d2.357499"><img
+                id="logo_localisation" alt="Localisation" title="Position géographique" src="/img/adresse.png"></a>
+    </div>
+
+    <p>
+        Réalisé par : Lucas HEINTZ - Jean-Luc TWISHIME - Yassine MOQRICH
+    </p>
+
 </body>
+
 </html>
