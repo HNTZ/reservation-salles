@@ -21,17 +21,17 @@ router.get("/", (req, res) => {
 
   if (!date || !partOfDay) {
     req.session.error = 'Preciser la date et la tranche horaire'
-    res.redirect('/')
+    res.redirect('/search')
     return
   }
   else if (new Date(date) < new Date()) {
     req.session.error = 'Entrez une date future'
-    res.redirect('/')
+    res.redirect('/search')
     return
   }
   else if (partOfDay !== 'morning' && partOfDay !== 'afternoon') {
     req.session.error = 'Mauvaise tranche horaire'
-    res.redirect('/')
+    res.redirect('/search')
   }
 
   // construct query for find
@@ -60,7 +60,7 @@ router.get("/", (req, res) => {
           res.render("rooms", { rooms: results, date : date, partOfDay })
         } else {
           req.session.error = "Aucune salle correspondant a vos critère n'est disponible."
-          res.redirect("/")
+          res.redirect("/search")
         }
       }
     )
